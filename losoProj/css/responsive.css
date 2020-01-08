@@ -1,0 +1,33 @@
+/* Media Query - Small Devices */
+@media only screen and (max-width: 767px) {
+	
+	.navbar-default {
+
+		background-color: #0b488c !important;
+		border-color: #e6e6e6;
+	}
+
+}
+
+/* Media Query - Small Devices And Tablets */
+@media only screen and (max-width: 768px) {
+	
+	.header-iphone {
+		display: none;
+	}
+	.header-text, .header-btns {
+		text-align: center;
+	}
+}
+
+/* Media Query - Medium Devices And Desktop */
+@media only screen and (min-width: 992px) {
+
+	
+}
+
+/* Media Query - Large Devices And Widescreens */
+@media only screen and (min-width: 1200px) {
+
+	
+}

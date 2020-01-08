@@ -1,0 +1,457 @@
+@font-face {
+	font-family: 'itcavantgardestd-bk';
+		src:url('../fonts/ITCAvantGardeStd-Bk.ttf') format('truetype');
+		src:url('../fonts/itcavantgardestd-bk.eot?#iefix') format('embedded-opentype'),
+		  	url('../fonts/itcavantgardestd-bk.woff') format('woff');
+	/*src:url('../fonts/itc-avant-garde-gothic-std-book.otf'),
+		  url('../fonts/itcavantgardestd-bk.otf') format('embedded-opentype'),
+		  url('../fonts/itc-avant-garde-gothic-std-medium.otf'),
+		  url('../fonts/itc-avant-garde-gothic-std-extra-light.otf');
+		/*url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');*/
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'code_pro_demoregular';
+  src:url('../fonts/Code_Pro_Demo-webfont.eot');
+  src:url('../fonts/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Code_Pro_Demo-webfont.woff2') format('woff2'),
+      url('../fonts/Code_Pro_Demo-webfont.woff') format('woff'),
+      url('../fonts/Code_Pro_Demo-webfont.ttf') format('truetype'),
+      url('../fonts/Code_Pro_Demo-webfont.svg#code_pro_demoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../img/grey_Dots.jpg);
+	font-family: 'itcavantgardestd-bk', code_pro_demoregular, Arial, sans-serif;
+	font-weight: 500;
+	color: #6b7381;
+	/*background: #f2f2f2;*/
+	/*overflow-y: scroll;*/
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+}
+
+#intro {
+	background: url(../img/bali_Fountain_1920.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 7rem;
+  height:977px;
+  width: 100%;
+}
+
+#project_intro {
+	background: url(../img/projectsBkgd.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 7rem;
+}
+
+#project_work {
+	background: url(../img/projectsBkgd.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+.heroTitle	 {
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(255,255,255, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgba(240, 147, 27, 1);
+}
+
+
+.navbar {
+	background-color: rgba(255,255,255, 0.5);
+	
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+a:hover,
+a:active {
+	color: #f0931b;
+}
+
+
+/*.mouse{
+	position: relative;
+	width: 1.83rem;
+	height: 3.2rem;
+	bottom: 7.3rem;
+}*/
+
+.border-2 {
+	border-width: 0.156rem !important;
+
+}
+
+/*Mouse Scroll Down Button*/
+
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	/*display: inline-block;*/
+	position: absolute;
+	z-index: 9999;
+	text-align: center;
+	top: 88%;
+	left: 0;
+	right: 0;
+}
+.scroll-btn > * {
+	display: block;
+	line-height: 2px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #fff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	-webkit-animation: ani-mouse 2.7s ease-in-out infinite;
+	-moz-animation: ani-mouse 2.7s ease-in-out infinite;
+	animation: ani-mouse 2.7s ease-in-out infinite;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: orange;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.7s linear infinite;
+	-moz-animation: ani-mouse 2.7s linear infinite;
+	animation: ani-mouse 2.7s linear infinite;
+}
+
+
+.mousetext {
+	bottom: 8.2rem;
+	font-size: 0.95rem;
+}
+
+#about {
+	position: relative;
+	top: -2rem;
+	padding-top: 2rem;
+	background-color: rgba(255,255,255, 0.25);
+	/*padding: 3rem 1rem 0 1rem;*/
+}
+
+.headerTitle.about, .headerTitle.work, .headerTitle.contact {
+	font-size: 1.17rem;
+	font-weight: 300;
+	letter-spacing: 0.25rem;
+}
+
+.headerTitle.contact {
+	/*color: lightgray;*/
+}
+
+.bioText {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.whiteBar {
+	position: relative;
+	top: 1.5rem;
+	background-color: #fff;
+	height: 0.9rem;
+}
+
+.grayBar {
+	position: relative;
+	top: 1.5rem;
+	background-color: #dee2e6;
+	/*height: 6rem;*/
+}
+
+.gridWrapper {
+	position: relative;
+	top: 1.5rem;
+	background:  rgba(32,168,194, 0.7) url(../img/bali_LtBlue.jpg) center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 41rem;
+}
+
+.col-lg-6, .col-md-6, .col-sm-6 {
+	padding-right: 1rem;
+	top: 1.5rem;
+	/*border-left: 1px solid lightgray;*/
+}
+
+.marker, .phone-icon, .email-icon {
+	margin-left: 3rem;
+	width: 5px;
+	height: 5px;
+	font-size: 1.3rem;
+	/*margin-top: 3rem;*/
+}				
+
+.contact-title, .address, .phone-info, .email-info {
+	margin-bottom: 0;
+	position: relative;
+	top: -6px;
+	font-size: 1.03rem;
+}
+/*.first-column {
+	background: #5851ff;
+	color: #fff;
+	min-height: 7rem;	
+}
+
+.second-column {
+	background: #5851ff;
+	color: #fff;
+	min-height: 7rem;
+}*/
+
+
+
+/* Grid Gutters */
+[class*="col-"] {
+  padding: 5px !important;
+}
+
+.cat-inner {
+  height: 6.5rem;
+  padding: 10px;
+  background-color: #42cbf4;
+}
+
+.divider-1 {
+	position: relative;
+	top: 2rem;
+	border: 1px solid lightgray;
+	margin-right: 3rem;
+}
+
+.map {
+	position: relative;
+	width: 80%;
+	top: 3.5rem;
+	margin-left: 1.2rem;
+}
+
+.map iframe {
+	width: 100%;
+	height: 255px;
+	border: 2px solid #fff;
+}
+
+/* Back to the top icon */
+
+a.back-to-top {
+	display: inline;
+	width: 70px;
+	height: 70px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	top: 92.3%;
+	text-decoration: none;
+	background: url(../img/chevron_down_arrow.png) no-repeat center 43%;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+}
+
+a:hover.back-to-top {
+	background-color: none;
+	background: url(../img/chevron_up_arrow.png) no-repeat center 43%;
+		
+}
+
+
+#pageFooter {
+		position: relative;
+		top: 1.5rem;
+    background: #b57225;
+    color: rgba(58,58,58, 0.7);
+    padding: 30px 0;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#projectFooter {
+    background: #b57225;
+    color: rgba(58,58,58, 0.7);
+    padding: 30px 0;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#imageContent {
+	  position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    /*padding: 1rem 12rem 2rem 7rem;*/
+    width: 100%;
+    /*background-color: rgba(173, 216, 230, 0.5);*/
+    top: 14rem;
+}
+
+.imgSS {
+	text-align: center;
+}
+
+.imgTR {
+	-webkit-box-shadow: 1px 1px 32px -7px rgba(0,0,0,0.53);
+	-moz-box-shadow: 1px 1px 32px -7px rgba(0,0,0,0.53);
+	box-shadow: 1px 1px 32px -7px rgba(0,0,0,0.53);
+}
+
+.descContainer {
+	  background-color: rgba(173, 216, 230, 0.55);
+    height: 10rem;
+    margin-top: 3rem;
+}
+
+.projTxt {
+		padding: 1rem 1rem 0 1.5rem;
+}
+
+.projectRow {
+		padding: 0 0.5rem 1.5rem 5rem;
+		height: 25rem;
+}
+
+.projBtn {
+	margin-right: 1rem;
+}
+
+.openBtn {
+	margin-right: 0.2rem;
+}
+
+.backBtn {
+	margin-right: 6rem;
+}
+
+.projectBtns {
+	margin-bottom: 1rem;
+}
+

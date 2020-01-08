@@ -1,0 +1,133 @@
+#contactform {
+	position: relative;
+	top: 1.5rem;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 1.25rem;
+}
+
+.form-container {
+	max-width: 100%;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 2rem;
+	/*border-top: 2px solid lightgray;*/
+	/*border-bottom: 2px solid lightgray;*/
+	/*background-color: rgba(255,255,255, 0.2);*/
+}
+
+.contactHeader {
+	/*width: 21.97rem;*/
+	height: 2.5rem;
+	margin-bottom: 1.4rem;
+	font-size: 1.16rem;
+}
+
+#contact {
+  padding-bottom: 1.3rem;
+  line-height: 1.5em;
+  margin-left: 1rem;
+}
+
+#contact h4 {
+	margin: 5px 0 15px;
+  display: block;
+  font-size: 1.1rem;
+  font-family: 'itcavantgardestd-bk', ITCAvantGardeStd-Bk, code_pro_demoregular, Arial, sans-serif;
+	color: #6b7381;
+}
+
+#legend {
+	line-height: 2.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: #ff9966;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 0.8rem;
+  min-width: 95%;
+  padding: 0;
+  width: 95%;
+}
+
+.email-info a {
+	color: #6b7381;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.email-info a:hover {
+	color: #f0931b ;
+}
+
+#contact input[type="text"], #contact input[type="email"], 
+#contact input[type="tel"], #contact input[type="url"], #contact textarea {
+  width: 100%;
+  border: 1.5px solid #CCC;
+  border-style: none none solid none;
+  background: rgba(255,255,255, 0);
+  margin: 0 0 5px;
+  padding: 0.5rem;
+  font-size: 0.926rem;
+  color: #6b7381;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0CF;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 0.6rem;
+  font-size: 1.12rem;
+}
+
+#contact button[type="submit"]:hover {
+	background: #09C;
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+}
+
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+	resize: none;
+}
+
+#contact button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: 0;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}	
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
